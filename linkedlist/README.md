@@ -1,26 +1,29 @@
-# Reverse Number Program Using Stack
+# Character Management Program for FC24 (Doubly Linked List)
 
-This program is designed to demonstrate the use of **Stacks** in Java by implementing a reverse number sorting mechanism. The program utilizes three stacks (A, B, C) to manage and manipulate data. It showcases fundamental operations of stack-based algorithms such as **PUSH** and **POP**.
+This program simulates a character management system for the game **FC24**, implemented using the **Doubly Linked List** data structure. It allows users to perform various operations on character data, such as inserting, traversing, searching, and deleting nodes.
 
 ## Key Features
-1. **Stack Initialization**  
-   - Users can specify the number of levels (size) for the stacks.
-   - Ensures valid input; non-integer or invalid data will prompt a re-entry.
+1. **Input (Insert at Head)**  
+   - Allows users to input character data and add it to the beginning of the linked list.
+   - Validates input to ensure completeness and accuracy.
 
-2. **Number Input (Stack A)**  
-   - Users input numbers into Stack A using the **PUSH** operation.
-   - Numbers must follow a decreasing order. If a number equal to or larger than the previous input is entered, the program prompts the user to enter a smaller value.
-   - Stack overflow (exceeding the specified size) is handled with appropriate error messages.
+2. **Insert After a Specific Node**  
+   - Adds a new character node after a specified node, determined by the character's name (using the SEARCH function).
+   - Alerts users if the specified node is not found.
 
-3. **Reversing Data Between Stacks**  
-   - Users can move data between Stacks A, B, and C using **POP** and **PUSH** operations.
-   - The program supports continuous data transfer and reversal between stacks.
-   - Handles underflow scenarios gracefully, displaying an error message if an empty stack is accessed.
+3. **Traversal**  
+   - Supports two types of traversal:
+     - **Forward Traversing**: From the head to the tail of the list.
+     - **Backward Traversing**: From the tail to the head of the list.
 
-## Algorithms Used
-- **PUSH**: Adds an element to the top of the stack.
-- **POP**: Removes the top element from the stack.
-- Validation mechanisms ensure that only valid data is processed.
+4. **Search by Name**  
+   - Finds a node by the character's name and displays the character's information.
+   - If the character is not found, it shows a "Not Found" message.
 
-## Supporting Documentation
-For a detailed explanation of the program and its design, refer to the [STACK.pdf](./STACK.pdf) file included in this repository.
+5. **Delete Node**  
+   - Deletes a node from the list based on the character's name.
+   - Displays the details of the deleted character.
+   - Alerts users if the character is not found.
+
+## Documentation
+For detailed information about the program and its implementation, refer to the attached [Linked-List.pdf](./Linked-List%20(สองทาง).pdf) file.
